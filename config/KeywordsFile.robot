@@ -7,8 +7,8 @@ ${remote_url}=    https://hub.browserstack.com/wd/hub
 
 *** Keywords ***
 Open Session
-    [Arguments]    ${capabilities}    ${test_url}
-    open browser    remote_url=${remote_url}     desired_capabilities=${capabilities}   url=${test_url}
+    [Arguments]    ${capabilities}    ${browsername}    ${test_url}
+    open browser    remote_url=${remote_url}     desired_capabilities=${capabilities}   url=${test_url}    browser=${browsername}
 
 Close Session
     close browser
