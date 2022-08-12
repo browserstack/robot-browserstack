@@ -11,7 +11,6 @@ Test Teardown    Close Session
 ${website_url}=    https://bstackdemo.com
 ${browser}=    chrome
 
-
 *** Keywords ***
 Execute test
     ${final_caps}=    combine caps    2
