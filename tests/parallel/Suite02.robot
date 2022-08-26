@@ -9,12 +9,13 @@ Test Teardown    Close Session
 
 *** Variables ***
 ${website_url}=    https://bstackdemo.com
+${browser}=    safari
 
 *** Keywords ***
 Execute test
     ${final_caps}=    combine caps    1
     Set to Dictionary    ${final_caps}    name=BStack Demo - ${TEST NAME}
-    Open Session    ${final_caps}    ${website_url}
+    Open Session    ${final_caps}    ${browser}    ${website_url}
 
 
 *** Test Cases ***

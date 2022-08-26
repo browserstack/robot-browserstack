@@ -9,13 +9,14 @@ Test Teardown    Teardown for local test
 
 *** Variables ***
 ${local_url}=    http://bs-local.com:45691/check
+${browser}=    chrome
 
 *** Keywords ***
 Setup for local test
     START LOCAL
     ${final_caps}=    combine caps    0
     Set to Dictionary    ${final_caps}    name=BStack Demo - ${TEST NAME}    browserstack.local=true
-    Open Session    ${final_caps}    ${local_url}
+    Open Session    ${final_caps}    ${browser}    ${local_url}
 
 Teardown for local test
     Close Session
