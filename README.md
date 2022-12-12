@@ -40,12 +40,12 @@ python3 should be installed
 * To run sample tests:
   - To run the sample tests in parallel across the platforms defined in the `browserstack.yml` file, run:
     ```
-    browserstack-sdk pabot ./tests/parallel/*.robot
+    browserstack-sdk robot ./tests/parallel/*.robot
     ```
 * To run tests on locally hosted websites:
   - To run the local test in parallel across the platforms defined in the `browserstack.yml` file, run:
     ```
-    browserstack-sdk pabot ./tests/LocalTest.robot
+    browserstack-sdk robot ./tests/LocalTest.robot
     ```
 
 Understand how many parallel sessions you need by using our [Parallel Test Calculator](https://www.browserstack.com/automate/parallel-calculator?ref=github)
