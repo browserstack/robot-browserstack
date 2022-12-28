@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${remote_url}=    http://localhost:4444/wd/hub
+${remote_url}=    https://ankitsingh_hcPF16:hwsNXrs8BXBWe8KmfxkW@hub.browserstack.com/wd/hub
 
 *** Keywords ***
 Open Session
