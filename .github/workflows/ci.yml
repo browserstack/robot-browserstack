@@ -2,15 +2,15 @@
 name: CI robot-browserstack sample
 on:
   pull_request:
-    branches:
-      - sdk
+    branches: [sdk]
+    types: [opened, reopened]
 jobs:
   build:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [macos-latest, windows-latest, ubuntu-latest]
-        python-version: ['3.7', '3.10', '3.11']
+        python: ['3.7', '3.10', '3.11']
     name: robot-browserstack-repo ${{ matrix.python }} - ${{ matrix.os }}
     env:
       BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
