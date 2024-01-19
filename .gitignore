@@ -9,3 +9,4 @@ pabot_results/
 *.png
 env
 browserstack.err
+venv
