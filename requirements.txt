@@ -1,6 +1,6 @@
 robotframework==6.1.1
-robotframework-seleniumlibrary
-robotframework-pabot
+robotframework-seleniumlibrary==6.2.0
+robotframework-pabot==2.16.0
 browserstack-local
-selenium
+selenium==4.16.0
 browserstack-sdk
