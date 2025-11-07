@@ -3,4 +3,4 @@ robotframework-seleniumlibrary==6.2.0
 robotframework-pabot
 browserstack-local
 selenium
-browserstack-sdk
+browserstack-sdk==1.33.2
